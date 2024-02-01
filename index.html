@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Remiender</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="mainContainer">
+        <h2>Advance Way of Learning Things</h2>
+        <div class="secondContainer">
+            <h3>Welconme To Learning Remiender</h3>
+
+            <div class="content">
+                <label for="firstlabel">Topics covered on day one :</label>
+                <input type="text" id="firstlabel" name="firstlabel" required>
+                <button id="addbtn" onclick="addTopicToDropDown()">Add</button>
+                <button id="showtopic" onclick="showTopic()">Show Topics</button>
+
+            </div><br>
+
+            <div class="content">
+
+                <label for="firstdropdown">Topics covered on Next Day :</label>
+                
+                <select id="firstdropwown" name="dropwown">
+                  
+                    
+                </select>
+                    
+                </select>
+                <button id="revisedbtn" onclick="addTopicToSecondDropDown()">Revised</button>
+                <button id="showtopic" onclick="showtopic()">Show Topics</button>
+
+            </div><br>
+
+            <div class="content">
+
+                <label for="seconddropdown">Topics covered on Third Day :</label>
+                
+                <select id="seconddropdown" name="dropdown">
+                   
+                    
+                </select>
+                    
+                </select>
+                <button id="revidedbtn" onclick="addTopicToThirdDropDown()">Revised</button>
+                <button id="showtopic" onclick="showtopic()">Show Topics</button>
+
+            </div><br>
+
+            <div class="content">
+
+                <label for="thirddropdown">Topics covered on sixth Day :</label>
+                
+                <select id="thirddropdown" name="dropwown">
+                   
+                </select>
+                    
+                </select>
+                <button id="revidedbtn" onclick="revised()">Revised</button>
+                <button id="showtopic" onclick="showtopic()">Show Topics</button>
+
+            </div>
+            <div class="result">
+                <h2>Topics covered</h2><br>
+                <li id="showresult"></li>
+                <button id="backbtn" onclick="goback()">Back</button>
+
+            </div>
+            </div>
+
+
+        </div>
+
+    
+    </div>
+    <script src="scripts.js"></script>
+        
+     
+</body>
+</html>

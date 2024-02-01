@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Copy Example</title>
+</head>
+<body>
+    <label for="firstDropdown">Select an item:</label>
+    <select id="firstDropdown">
+        <option value="item1">Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+    </select>
+
+    <button onclick="copyToSecondDropdown()">Copy to Second Dropdown</button><br>
+
+    <label for="secondDropdown">Copied Items:</label>
+    <select id="secondDropdown"></select>
+
+    <script>
+        function copyToSecondDropdown() {
+            // Get the selected item from the first dropdown
+            const firstDropdown = document.getElementById("firstDropdown");
+            const selectedItem = firstDropdown.options[firstDropdown.selectedIndex];
+
+            // Create a new option element for the second dropdown
+            const secondDropdown = document.getElementById("secondDropdown");
+            const newOption = document.createElement("option");
+            newOption.value = selectedItem.value;
+            newOption.text = selectedItem.text;
+
+            // Add the new option to the second dropdown
+            secondDropdown.add(newOption);
+        }
+    </script>
+</body>
+</html>

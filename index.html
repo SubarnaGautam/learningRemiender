@@ -3,82 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Remiender</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
-    
+    <title>Learning Reminder</title>
+    <link href="style.css" type="text/css" rel="stylesheet"> <!-- Link to the external CSS file -->
 </head>
 <body>
-    <div class="mainContainer">
-        <h2>Advance Way of Learning Things</h2>
-        <div class="secondContainer">
-            <h3>Welconme To Learning Remiender</h3>
+    <div class="main-container">
+        <h2>Learning Reminder</h2>
+        <div class="learning-container">
+            <h3>Welcome!</h3>
 
-            <div class="content">
-                <label for="firstlabel">Topics covered on day one :</label>
-                <input type="text" id="firstlabel" name="firstlabel" required>
-                <button id="addbtn" onclick="addTopicToDropDown()">Add</button>
-                <button id="showtopic" onclick="showTopic()">Show Topics</button>
-
+            <!-- Section for Day 1: Add topics -->
+            <div class="topic-container">
+                <label for="day1-input">Enter topic for Day 1:</label>
+                <input type="text" id="day1-input" required> <!-- Input field for Day 1 topic -->
+                <button onclick="addTopicToDayOne()">Add Topic</button> <!-- Button to add topic to Day 1 -->
+                <button onclick="showTopics()">Show Topics</button> <!-- Button to show all topics -->
             </div><br>
 
-            <div class="content">
-
-                <label for="firstdropdown">Topics covered on Next Day :</label>
-                
-                <select id="firstdropwown" name="dropwown">
-                  
-                    
-                </select>
-                    
-                </select>
-                <button id="revisedbtn" onclick="addTopicToSecondDropDown()">Revised</button>
-                <button id="showtopic" onclick="showtopic()">Show Topics</button>
-
+            <!-- Section for Day 2: Select topics from Day 1 -->
+            <div class="topic-container">
+                <label for="day2-dropdown">Day 2 Topics:</label>
+                <select id="day2-dropdown"></select> <!-- Dropdown to show Day 1 topics for Day 2 -->
+                <button onclick="addTopicToDayTwo()">Add Topic</button> <!-- Button to add topic to Day 2 -->
+                <button onclick="showTopics()">Show Topics</button> <!-- Button to show all topics -->
             </div><br>
 
-            <div class="content">
-
-                <label for="seconddropdown">Topics covered on Third Day :</label>
-                
-                <select id="seconddropdown" name="dropdown">
-                   
-                    
-                </select>
-                    
-                </select>
-                <button id="revidedbtn" onclick="addTopicToThirdDropDown()">Revised</button>
-                <button id="showtopic" onclick="showtopic()">Show Topics</button>
-
+            <!-- Section for Day 3: Select topics from Day 2 -->
+            <div class="topic-container">
+                <label for="day3-dropdown">Day 3 Topics:</label>
+                <select id="day3-dropdown"></select> <!-- Dropdown to show Day 2 topics for Day 3 -->
+                <button onclick="addTopicToDayThree()">Add Topic</button> <!-- Button to add topic to Day 3 -->
+                <button onclick="showTopics()">Show Topics</button> <!-- Button to show all topics -->
             </div><br>
 
-            <div class="content">
-
-                <label for="thirddropdown">Topics covered on sixth Day :</label>
-                
-                <select id="thirddropdown" name="dropwown">
-                   
-                </select>
-                    
-                </select>
-                <button id="revidedbtn" onclick="revised()">Revised</button>
-                <button id="showtopic" onclick="showtopic()">Show Topics</button>
-
-            </div>
-            <div class="result">
-                <h2>Topics covered</h2><br>
-                <li id="showresult"></li>
-                <button id="backbtn" onclick="goback()">Back</button>
-
-            </div>
+            <!-- Section for Day 6: Select topics from Day 3 -->
+            <div class="topic-container">
+                <label for="day6-dropdown">Day 6 Topics:</label>
+                <select id="day6-dropdown"></select> <!-- Dropdown to show Day 3 topics for Day 6 -->
+                <button onclick="addTopicToFinalDay()">Add Topic</button> <!-- Button to add topic to Day 6 -->
+                <button onclick="showTopics()">Show Topics</button> <!-- Button to show all topics -->
             </div>
 
-
+            <!-- Result Section: Shows all selected topics -->
+            <div class="result-container" style="display:none;">
+                <h2>Topics Covered:</h2>
+                <ul id="showresult"></ul> <!-- List of all topics -->
+                <button onclick="goback()">Back</button> <!-- Button to go back and hide results -->
+            </div>
         </div>
-
-    
     </div>
-    <script src="scripts.js"></script>
-        
-     
+
+    <script src="scripts.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>

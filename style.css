@@ -4,6 +4,7 @@ body{
     font-size: 16px;
     font: 1em sans-serif;
     font-size: 25px;
+    margin: 0 auto;
 
 }
 .maincontainer{
@@ -33,14 +34,16 @@ body{
     justify-content: center;
 }
 input{
-    background-color: hsla(0, 0%, 83%, 0.725);
+    background-color: hsla(0, 7%, 77%, 0.725);
     height: fit-content;
+    border-radius: 1px, bold;
 }
 button{
-    font-size:0.8rem;
+    font-size:0.9rem;
     border-radius: 5px;
-    background-color: hsl(120, 42%, 38%);
+    background-color: hsl(120, 27%, 75%);
     cursor: pointer;
+
 }
 button:hover{
 

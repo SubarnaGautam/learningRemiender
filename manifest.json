@@ -1,0 +1,16 @@
+{
+    "name": "Learning Remiender APP",
+    "short_name": "LRA",
+    "description": "An example of a PWA",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+        {
+            "src": "/Users/subarnagautam/Desktop/Codeacademy/JavaScript/learningRemainderProject/sources/icons",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

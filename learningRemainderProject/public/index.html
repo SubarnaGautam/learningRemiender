@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <title>Learning Reminder</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main-container">
+            <h1>Learning Reminder</h1>
+        </div>
+    </header>
+    <main>
+        <div class="learning-container">
+            <h2>Welcome!</h2>
+
+            <div class="topic-container">
+                <label for="day1-input">Enter topic for Day 1:</label>
+                <input type="text" id="day1-input" required>
+                <button id="addOne">Add Topic</button>
+                <button id="frstShowTopic">Show Topics</button>
+            </div>
+
+            <div class="topic-container">
+                <label for="day2-dropdown">Day 2 Topics:</label>
+                <select id="day2-dropdown"></select>
+                <button id="addTwo">Add Topic</button>
+                <button id="secondShowTopic">Show Topics</button>
+            </div>
+
+            <div class="topic-container">
+                <label for="day3-dropdown">Day 3 Topics:</label>
+                <select id="day3-dropdown"></select>
+                <button id="addThree">Add Topic</button>
+                <button id="thirdShowTopic">Show Topics</button>
+            </div>
+
+            <div class="topic-container">
+                <label for="day6-dropdown">Day 6 Topics:</label>
+                <select id="day6-dropdown"></select>
+                <button id="addFinal">Add Topic</button>
+                <button id="finalShowTopic">Show Topics</button>
+            </div>
+
+            <div class="result-container" style="display:none;">
+                <h2>Topics Covered:</h2>
+                <ul id="showresult"></ul>
+                <button id="back-btn">Back</button>
+                <button id="delete-btn">Delete</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Learning Reminder. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js" type="module"></script>
+</body>
+</html>

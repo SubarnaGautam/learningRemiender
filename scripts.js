@@ -100,18 +100,7 @@ FinalAddBtn.addEventListener("click", function () {
         console.log(`Day 6 topic added: ${selectedTopic}`); // Log the added topic
     }
 });
-/*first show topic btn 
-document.addEventListener("DOMContentLoaded", function (){
-firstTopicShow.addEventListener("click", function(){
-    showresult.innerHTML = "";
-    console.log("clicked")
-})})
 
-secondTopicShowTopicShow.addEventListener("click", function(){
-    showresult.innerHTML = "";
-    console.log("clicked")
-})
-*/
 // Display all topics for each day in the result section
 finalTopicShow.addEventListener("click", function () {
     showresult.innerHTML = ""; // Clear the result container
@@ -143,32 +132,17 @@ function displayTopics(day, topics) {
 }
 
 // Hide the result section and go back
+backBtn.addEventListener("click", function () {
+    resultContainer.style.display = "none"; // Hide the result container
+    console.log("clicked");
+});
 
-/* backBtn.addEventListener("click", function(){
-    resultContainer.style.display = "none" // Hide the result container
-    console.log("clicked")}
-
-
-
-);*/
-
-function renderDisplay(){
-    resultContainer.style.display = "none" // Hide the result container
-    console.log("clicked")}
-
- 
-backBtn.addEventListener("click",renderDisplay)
-
-deleteBtn.addEventListener("dblclick", function(){
- showresult.innerHTML = ""
-
-remove(referencesInDB)
-.then(() => {
-    console.log("array deleted")
-    dayOneTopics = []
-
-})
-
-
-   // console.log("clicked")
-})
+// Delete all topics
+deleteBtn.addEventListener("dblclick", function () {
+    showresult.innerHTML = "";
+    remove(referencesInDB)
+        .then(() => {
+            console.log("array deleted");
+            dayOneTopics = [];
+        });
+});

@@ -1,19 +1,37 @@
-body{
+body {
     background-color: lightgray;
     text-align: center;
     font-size: 16px;
     font: 1em sans-serif;
     font-size: 25px;
     margin: 0 auto;
-
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.maincontainer{
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.maincontainer {
     display: flex;
     justify-content: center;
     font: sans-serif;
     font-size: 20px;
 }
-.secondContainer{
+
+.secondContainer {
     background-color: white;
     border: 2px solid black;
     display: flex;
@@ -25,34 +43,59 @@ body{
     font-size: 1.3rem;
     font: sans-serif;
     font-size: 20px;
-    
 }
-.content{
+
+.learning-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic-container {
+    margin-bottom: 20px;
+}
+
+.topic-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.topic-container input, .topic-container select, .topic-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
     display: flex;
-    
     font-size: 1rem;
     justify-content: center;
 }
-input{
+
+.result-container {
+    margin-top: 20px;
+}
+
+input {
     background-color: hsla(0, 7%, 77%, 0.725);
     height: fit-content;
     border-radius: 1px, bold;
 }
-button{
-    font-size:0.9rem;
+
+button {
+    font-size: 0.9rem;
     border-radius: 5px;
     background-color: hsl(120, 27%, 75%);
     cursor: pointer;
-
 }
-button:hover{
 
+button:hover {
     background-color: hsl(120, 42%, 68%);
     cursor: pointer;
-  
 }
-.result{
-   
+
+.result {
     border-radius: 4px;
     padding: 0 10px;
     font-size: 1rem;
@@ -61,12 +104,19 @@ button:hover{
     height: 50vh;
     width: 90%;
     display: none;
-
 }
-#showresult{
+
+#showresult {
     list-style: none;
 }
-#backbtn{
+
+#backbtn {
     margin-top: 50%;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .topic-container input, .topic-container select, .topic-container button {
+        width: 100%;
+    }
 }

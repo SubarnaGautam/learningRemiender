@@ -1,0 +1,94 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.learning-container {
+    margin-top: 20px;
+}
+
+.topic-container {
+    margin-bottom: 20px;
+}
+
+.topic-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.topic-container input,
+.topic-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.topic-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.topic-container button:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+.result-container h2 {
+    margin: 0 0 10px;
+}
+
+.result-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-container button {
+    margin-top: 10px;
+    background-color: #dc3545;
+}
+
+.result-container button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .topic-container input,
+    .topic-container select,
+    .topic-container button {
+        width: 100%;
+    }
+}

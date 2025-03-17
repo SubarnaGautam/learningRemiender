@@ -11,53 +11,57 @@
     <link href="style.css" type="text/css" rel="stylesheet"> <!-- Link to the external CSS file -->
 </head>
 <body>
-    <div class="main-container">
-        <h2>Learning Reminder</h2>
-        <div class="learning-container">
-            <h3>Welcome!</h3>
+    <header>
+        <h1>Learning Reminder</h1>
+    </header>
+    <main class="main-container">
+        <section class="learning-container">
+            <h2>Welcome!</h2>
 
             <!-- Section for Day 1: Add topics -->
             <div class="topic-container">
                 <label for="day1-input">Enter topic for Day 1:</label>
                 <input type="text" id="day1-input" required> <!-- Input field for Day 1 topic -->
-                <button id= "addOne">Add Topic</button> <!-- Button to add topic to Day 1 -->
-                <button id = "frstShowTopic">Show Topics1</button> <!-- Button to show all topics -->
-            </div><br>
+                <button id="addOne">Add Topic</button> <!-- Button to add topic to Day 1 -->
+                <button id="firstShowTopic">Show Topics1</button> <!-- Button to show all topics -->
+            </div>
 
             <!-- Section for Day 2: Select topics from Day 1 -->
             <div class="topic-container">
                 <label for="day2-dropdown">Day 2 Topics:</label>
                 <select id="day2-dropdown"></select> <!-- Dropdown to show Day 1 topics for Day 2 -->
-                <button id = "addTwo">Add Topic</button> <!-- Button to add topic to Day 2 -->
-                <button id = "secondShowTopic">Show Topics2</button> <!-- Button to show all topics -->
-            </div><br>
+                <button id="addTwo">Add Topic</button> <!-- Button to add topic to Day 2 -->
+                <button id="secondShowTopic">Show Topics2</button> <!-- Button to show all topics -->
+            </div>
 
             <!-- Section for Day 3: Select topics from Day 2 -->
             <div class="topic-container">
                 <label for="day3-dropdown">Day 3 Topics:</label>
                 <select id="day3-dropdown"></select> <!-- Dropdown to show Day 2 topics for Day 3 -->
-                <button id= "addThree">Add Topic</button> <!-- Button to add topic to Day 3 -->
-                <button id = "thirdShowTopic">Show Topics3</button> <!-- Button to show all topics -->
-            </div><br>
+                <button id="addThree">Add Topic</button> <!-- Button to add topic to Day 3 -->
+                <button id="thirdShowTopic">Show Topics3</button> <!-- Button to show all topics -->
+            </div>
 
             <!-- Section for Day 6: Select topics from Day 3 -->
             <div class="topic-container">
                 <label for="day6-dropdown">Day 6 Topics:</label>
                 <select id="day6-dropdown"></select> <!-- Dropdown to show Day 3 topics for Day 6 -->
-                <button id= "addFinal">Add Topic</button> <!-- Button to add topic to Day 6 -->
-                <button id = "finalShowTopic">Show Topics6</button> <!-- Button to show all topics -->
+                <button id="addFinal">Add Topic</button> <!-- Button to add topic to Day 6 -->
+                <button id="finalShowTopic">Show Topics6</button> <!-- Button to show all topics -->
             </div>
 
             <!-- Result Section: Shows all selected topics -->
             <div class="result-container" style="display:none;">
                 <h2>Topics Covered:</h2>
                 <ul id="showresult"></ul> <!-- List of all topics -->
-                <button id= "back-btn">Back</button><!-- Button to go back and hide results -->
-                <button id= "delete-btn">Delete</button> 
+                <button id="back-btn">Back</button><!-- Button to go back and hide results -->
+                <button id="delete-btn">Delete</button> 
             </div>
-        </div>
-    </div>
-
-    <script src="scripts.js" type="module" ></script> <!-- Link to external JavaScript file -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Learning Reminder App</p>
+    </footer>
+    <script src="scripts.js" type="module"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
